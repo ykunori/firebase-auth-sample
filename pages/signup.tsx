@@ -1,7 +1,5 @@
 import type { NextPage } from 'next'
-import {useCallback, useEffect, useState} from "react";
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import { initializeApp } from 'firebase/app';
+import {useCallback, useState} from "react";
 import {signUp} from "../src/getAuth";
 
 const Signup: NextPage = () => {
@@ -28,10 +26,7 @@ const Signup: NextPage = () => {
 
   return (
     <div>
-      <h1>signin</h1>
-      <h1>Welcome to My Awesome App</h1>
-      <div id="firebaseui-auth-container"></div>
-      <div id="loader">Loading...</div>
+      <h1>signup</h1>
       <input type="text" onChange={onChangeEmail}></input>
       <input type="password" onChange={onChangePassword}></input>
       <button onClick={signupHandler}>登録</button>
